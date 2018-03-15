@@ -110,26 +110,6 @@ function addElements() {
         containerDiv.appendChild(newDiv);
     }
 
-    // // create submit button
-    // var saveBtn = document.createElement('INPUT');
-    //     saveBtn.setAttribute('type', 'button');
-    //     saveBtn.setAttribute('class', 'saveBtn')
-    //     saveBtn.setAttribute('value', 'SAVE');
-    //     saveBtn.setAttribute('onclick', 'getValues()');
-
-    // // append saveBtn to document
-    // document.body.appendChild(saveBtn);
-    
-    // create calculate button
-    // var calculateBtn = document.createElement('INPUT');
-    //     calculateBtn.setAttribute('type', 'button');
-    //     calculateBtn.setAttribute('class', 'saveBtn');
-    //     calculateBtn.setAttribute('value', 'CALCULATE');
-    //     calculateBtn.setAttribute('onclick', 'totalCubicFeet()');
-    
-    // append calculate button to document
-        // document.body.appendChild(calculateBtn);
-
     // create total cubic feet display
     var cubicFeetDisplay = document.createElement('P');
         cubicFeetDisplay.setAttribute('id', 'cubicFeetDisplay');
