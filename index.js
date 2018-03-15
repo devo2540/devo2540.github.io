@@ -160,7 +160,7 @@ function totalCubicFeet() {
 
     totalCubicArr = [];
 
-    totalCubicArr.push(newArr[0] * 10); // desk 
+    totalCubicArr.push(newArr[0] * 10); // desk
     totalCubicArr.push(newArr[1] * 10); // l-shape
     totalCubicArr.push(newArr[2] * 10); // u-shape
     totalCubicArr.push(newArr[3] * 40); // credenza
