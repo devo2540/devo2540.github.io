@@ -4,6 +4,7 @@ function plus(el) {
     let qty = +el.children[0].innerHTML;
     qty ++;
     el.children[0].innerHTML = qty;
+    totalCubicFeet();
 }
 
 // decrement one function
@@ -13,6 +14,7 @@ function minus(el) {
         qty--;
         el.children[0].innerHTML = qty;
     }
+    totalCubicFeet();
 }
 
 // add all divs to window
@@ -119,36 +121,33 @@ function addElements() {
     // document.body.appendChild(saveBtn);
     
     // create calculate button
-    var calculateBtn = document.createElement('INPUT');
-        calculateBtn.setAttribute('type', 'button');
-        calculateBtn.setAttribute('class', 'saveBtn');
-        calculateBtn.setAttribute('value', 'CALCULATE');
-        calculateBtn.setAttribute('onclick', 'totalCubicFeet()');
+    // var calculateBtn = document.createElement('INPUT');
+    //     calculateBtn.setAttribute('type', 'button');
+    //     calculateBtn.setAttribute('class', 'saveBtn');
+    //     calculateBtn.setAttribute('value', 'CALCULATE');
+    //     calculateBtn.setAttribute('onclick', 'totalCubicFeet()');
     
     // append calculate button to document
-        document.body.appendChild(calculateBtn);
+        // document.body.appendChild(calculateBtn);
 
     // create total cubic feet display
-        var totalCubicFeetDisplay = document.createElement('P');
+    var cubicFeetDisplay = document.createElement('P');
+        cubicFeetDisplay.setAttribute('id', 'cubicFeetDisplay');
     
+        document.body.appendChild(cubicFeetDisplay);
+    
+    // create total trucks display
+        var trucksDisplay = document.createElement('P');
+            trucksDisplay.setAttribute('id', 'trucksDisplay')
+    
+        document.body.appendChild(trucksDisplay);
 
 }
 
-// var allBoxes = document.querySelectorAll('.total');
-// var totalArr = [...allBoxes];
-// var newArr = [];
-
-// function to get value of each box 
-// function getValues() {
-//     var newArr = [];
-
-//     for (i = 0; i < totalArr.length; i++) {
-//         newArr.push(+totalArr[i].innerHTML);
-//     }
-//     console.log(newArr)
-// }
-
 var totalCubicArr = [];
+var totalCubicFeetDisplay = document.querySelector('#cubicFeetDisplay');
+var totalTrucksDisplay = document.querySelector('#trucksDisplay');
+
 function totalCubicFeet() {
     var allBoxes = document.querySelectorAll('.total');
     var totalArr = [...allBoxes];
@@ -192,9 +191,18 @@ function totalCubicFeet() {
     totalCubicArr.push(newArr[28] * 9); // crates
     totalCubicArr.push(newArr[29] * 9); // crates
 
+    var cubicFeet = totalCubicArr.reduce((a, b) => a + b, 0);
+    var totalTrucks = (cubicFeet / 800);
+
     // console.log(totalCubicArr);
-    console.log('Total Cubic Feet: ' + totalCubicArr.reduce((a, b) => a + b, 0));
+    // console.log('Total Cubic Feet: ' + cubicFeet);
+    // console.log('Total Trucks: ' + totalTrucks.toFixed(1));
+
+    totalCubicFeetDisplay.innerHTML = 'Total Cubic Feet: ' + cubicFeet;    
+    totalTrucksDisplay.innerHTML = 'Total Trucks: ' + totalTrucks.toFixed(2);
 }
+
+///////////////////////////////////////////////////////////////////////
 
 // CUBIC FEET
 // desks: 40
