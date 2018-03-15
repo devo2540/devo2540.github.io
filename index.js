@@ -23,36 +23,42 @@ document.body.onload = addElements();
 function addElements() {
     // cube titles
     var cubeNames = [
-        'Desk',
-        'L-Shape',
-        'U-Shape',
+        'Desks',
+        'Executive Unit',
+        'Sec. Desks',
+        'Hutch',
         'Credenza',
         'Sm. Bookcase',
         'Lg. Bookcase',
-        'Steel Shelving',
-        'Chairs',
+        'Metal Shelving',
+        'Drafting Table',
+        'Map File',
         'Chairs',
         'Sm Table',
-        'Lg Table',
+        'Work Table',
         'Conf Table',
         'Comp Table',
         'Copier',
-        'Vertical',
-        'Vertical',
-        'Lateral',
-        'Lateral',
+        'Sofa',
+        '2/3 Vertical',
+        '4/5 Vertical',
+        '2/3 Lateral',
+        '4/5 Lateral',
         'Storage Cabinet',
         'Pictures',
         'Plants',
+        'Marble/Glass Top',
         'PCs',
-        'Add Monitors',
         'Printers',
-        'Fridge',
-        'Microwave',
+        'Equipment',
+        'PBO Cartons',
+        '3.0 Sec. Crates',
+        '2.2 Cartons',
+        'Gondolas',
+        'Appliances',
         'Rolling Carts',
-        'PBO',
-        'Crates',
-        'Crates'
+        'Modular Stations',
+        'Misc.'
     ];
 
     // create flex-container div 
@@ -136,97 +142,55 @@ function totalCubicFeet() {
     for (i = 0; i < totalArr.length; i++) {
         newArr.push(+totalArr[i].innerHTML);
     };
-    // console.log(newArr);
 
     totalCubicArr = [];
 
-    totalCubicArr.push(newArr[0] * 10); // desk
-    totalCubicArr.push(newArr[1] * 10); // l-shape
-    totalCubicArr.push(newArr[2] * 10); // u-shape
-    totalCubicArr.push(newArr[3] * 40); // credenza
-    totalCubicArr.push(newArr[4] * 20); // sm. bookcase
-    totalCubicArr.push(newArr[5] * 30); // lg. bookcase 
-    totalCubicArr.push(newArr[6] * 30); // steel shelving
-    totalCubicArr.push(newArr[7] * 30); // chairs
-    totalCubicArr.push(newArr[8] * 10); // sm table
-    totalCubicArr.push(newArr[9] * 10); // sm table
-    totalCubicArr.push(newArr[10] * 45); // lg table/work table?????
-    totalCubicArr.push(newArr[11] * 80); // conf table
-    totalCubicArr.push(newArr[12] * 35); // comp table 
-    totalCubicArr.push(newArr[13] * 20); // copier 
-    totalCubicArr.push(newArr[14] * 15); // 2/3 sm vertical 
-    totalCubicArr.push(newArr[15] * 25); // 4/5 lg vertical 
-    totalCubicArr.push(newArr[16] * 20); // 2/3 sm lateral 
-    totalCubicArr.push(newArr[17] * 30); // 4/5 lg lateral 
-    totalCubicArr.push(newArr[18] * 30); // storage cabinet 
-    totalCubicArr.push(newArr[19] * 5); // pictures/whiteboards
-    totalCubicArr.push(newArr[20] * 10); // plants 
-    totalCubicArr.push(newArr[21] * 9); // PCs 
-    totalCubicArr.push(newArr[22] * 9); // monitors 
-    totalCubicArr.push(newArr[23] * 9); // printers 
-    totalCubicArr.push(newArr[24] * 9); // Fridge 
-    totalCubicArr.push(newArr[25] * 9); // microwave
-    totalCubicArr.push(newArr[26] * 55); // rolling carts
-    totalCubicArr.push(newArr[27] * 3); // PBO 
-    totalCubicArr.push(newArr[28] * 9); // crates
-    totalCubicArr.push(newArr[29] * 9); // crates
+    totalCubicArr.push(newArr[0] * 45); // desk
+    totalCubicArr.push(newArr[1] * 80); // exec unit
+    totalCubicArr.push(newArr[2] * 60); // sec. desk 
+    totalCubicArr.push(newArr[3] * 50); // hutch
+    totalCubicArr.push(newArr[4] * 40); // credenza 
+    totalCubicArr.push(newArr[5] * 20); // sm. bookcase
+    totalCubicArr.push(newArr[6] * 30); // lg. bookcase
+    totalCubicArr.push(newArr[7] * 30); // metal Shelving
+    totalCubicArr.push(newArr[8] * 50); // drafting table 
+    totalCubicArr.push(newArr[9] * 40); // map file 
+    totalCubicArr.push(newArr[10] * 10); // chairs 
+    totalCubicArr.push(newArr[11] * 10); // sm table  
+    totalCubicArr.push(newArr[12] * 45); // work table  
+    totalCubicArr.push(newArr[13] * 80); // conf table  
+    totalCubicArr.push(newArr[14] * 35); // comp table  
+    totalCubicArr.push(newArr[15] * 20); // copier  
+    totalCubicArr.push(newArr[16] * 80); // sofa  
+    totalCubicArr.push(newArr[17] * 15); // 2/3 vertical
+    totalCubicArr.push(newArr[18] * 25); // 4/5 vertical
+    totalCubicArr.push(newArr[19] * 20); // 2/3 lateral
+    totalCubicArr.push(newArr[20] * 30); // 4/5 Lateral
+    totalCubicArr.push(newArr[21] * 30); // storage cabinet 
+    totalCubicArr.push(newArr[22] * 5); // pictures 
+    totalCubicArr.push(newArr[23] * 10); // plants 
+    totalCubicArr.push(newArr[24] * 30); // marble/glass top 
+    totalCubicArr.push(newArr[25] * 9); // PCs
+    totalCubicArr.push(newArr[26] * 9); // printers 
+    totalCubicArr.push(newArr[27] * 9); // equipment 
+    totalCubicArr.push(newArr[28] * 3); // PBO cartons  
+    totalCubicArr.push(newArr[29] * 6); // 3.0 sec crates   
+    totalCubicArr.push(newArr[30] * 4); // 2.2 cartons   
+    totalCubicArr.push(newArr[31] * 20); // gondolas   
+    totalCubicArr.push(newArr[32] * 40); // appliances   
+    totalCubicArr.push(newArr[33] * 55); // rolling carts    
+    totalCubicArr.push(newArr[34] * 80); // modular stations    
+    totalCubicArr.push(newArr[35] * 200); // MISC    
 
     var cubicFeet = totalCubicArr.reduce((a, b) => a + b, 0);
     var totalTrucks = (cubicFeet / 800);
-
-    // console.log(totalCubicArr);
-    // console.log('Total Cubic Feet: ' + cubicFeet);
-    // console.log('Total Trucks: ' + totalTrucks.toFixed(1));
 
     totalCubicFeetDisplay.innerHTML = 'Total Cubic Feet: ' + cubicFeet;    
     totalTrucksDisplay.innerHTML = 'Total Trucks: ' + totalTrucks.toFixed(2);
 }
 
-///////////////////////////////////////////////////////////////////////
 
-// CUBIC FEET
-// desks: 40
-// credenza: 40
-// map file: 40
 
-// executive unit: 80
-
-// security desk: 60
-
-// hutch: 50
-// drafting table: 50
-
-// sm bookcase: 20
-
-// lg bookcase: 30
-// metal shelving: 30
-
-// map file: 40
-// chairs: 10
-// sm table: 10
-// work table: 45
-// conf table: 80
-// comp table: 35
-// copiers: 20
-// sofa: 80
-// 2 / 3 vertical file: 15
-// 4 / 5 vertical file: 25
-// 2 / 3 lateral file: 20
-// 4 / 5 lateral file 30
-// storage cabinet: 30
-// pictures / white boards: 5
-// plants: 10
-// marble / glass top: 30
-// pc units: 9
-// printers: 9
-// equipment: 9
-// pbo cartons: 3
-// 3.0 security crates: 6
-// 2.2 cartons: 4
-// gondolas: 20
-// appliances: 40
-// book / machine carts: 55
-// modular stations: 80
 
 
 
