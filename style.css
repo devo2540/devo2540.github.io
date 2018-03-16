@@ -95,3 +95,7 @@ html {
     font-size: 100em;
 }
 
+#cubicFeetDisplay, #trucksDisplay {
+    display: inline-block;
+    margin-left: 2%;
+}
