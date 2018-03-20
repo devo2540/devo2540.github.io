@@ -100,12 +100,14 @@ function addElements() {
     // create total cubic feet display
     var cubicFeetDisplay = document.createElement('P');
     cubicFeetDisplay.setAttribute('id', 'cubicFeetDisplay');
+    cubicFeetDisplay.setAttribute('class', 'totalDisplay');
 
     document.body.appendChild(cubicFeetDisplay);
 
     // create total trucks display
     var trucksDisplay = document.createElement('P');
     trucksDisplay.setAttribute('id', 'trucksDisplay')
+    trucksDisplay.setAttribute('class', 'totalDisplay');
 
     document.body.appendChild(trucksDisplay);
 }
