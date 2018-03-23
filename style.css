@@ -21,13 +21,13 @@ html {
     text-align: center;
 }
 
-.flex-child > h6  {
+.plusDiv > h6  {
     color: black;
     margin: 0 auto;
     height: 10%;
-    width: 75%;
+    width: 100%;
     font-size: large;
-    padding: 2%;
+    /*padding: 2%;*/
 }
 
 .count {
@@ -49,14 +49,24 @@ html {
     justify-content: space-around;
 }*/
 
-.minus {
-    line-height: 1.5em;
-    width: 30%;
-    margin-right: 15%;
-    margin-bottom: 15%;
-    background: orangered;
-    font-size: .2em;
-    font-weight: bolder;
+.plusDiv {
+    min-height: 85%;
+}
+
+/*.minus {
+    border: 1px solid deeppink;
+    height: 20px;
+    width: 50%;
+    margin-top: 32%;
+    z-index: 99;
+}*/
+
+.hotCorner {
+    /*border: 1px solid green;*/
+    height: 22.5px;
+    width: 20%;
+    background: red;
+    border-top-right-radius: 20%;
 }
 
 .plus {
