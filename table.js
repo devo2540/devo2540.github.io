@@ -48,7 +48,7 @@ function addTable() {
     printable.appendChild(unitCubicFeetColumn);  
     unitCubicFeetColumn.appendChild(unitCubicFeetColumnHeader);  
     
-    var units = [...document.querySelectorAll('.flex-child > h6')];
+    var units = [...document.querySelectorAll('.plusDiv > h6')];
     for (unit = 0; unit < units.length; unit++) {
         var unitDiv = document.createElement('DIV');
         unitDiv.setAttribute('class', 'unitDiv');
