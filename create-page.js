@@ -98,6 +98,7 @@ function addElements() {
         plusDiv.appendChild(qtyDiv);
         qtyDiv.appendChild(p);
         newDiv.appendChild(hotCorner);
+        // plusDiv.appendChild(hotCorner);
         // append minus button to qtyDiv
         // qtyDiv.appendChild(minusInput);
         // append plus button to qtyDiv
