@@ -19,6 +19,8 @@ html {
     min-width: 150px;
     margin: 1%;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .plusDiv > h6  {
@@ -50,7 +52,7 @@ html {
 }*/
 
 .plusDiv {
-    min-height: 85%;
+    min-height: 76.5%;
 }
 
 /*.minus {
@@ -63,10 +65,13 @@ html {
 
 .hotCorner {
     /*border: 1px solid green;*/
-    height: 22.5px;
-    width: 20%;
+    margin-right: 0;
+    height: 35px;
+    width: 30%;
     background: red;
     border-top-right-radius: 20%;
+    position: absolute;
+    z-index: 10;
 }
 
 .plus {
