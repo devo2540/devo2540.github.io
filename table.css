@@ -8,24 +8,18 @@
 }
 
 .containerColumn {
-    /*height: 600px;*/
     width: 30%;
-    /*border: 1px solid red;*/
     flex-direction: row;
 }
 
 .columnHeader {
     padding-left: 2%;
-    /*border: 1px solid black;*/
     text-decoration: underline;
 }
 
 .unitDiv {
-    /*height: 50px;*/
-    /*border: 1px solid green;*/
     flex-direction: column;
     padding-left: 2%;
-    /*text-decoration: underline;*/
     margin-bottom: 2%;
 }
 

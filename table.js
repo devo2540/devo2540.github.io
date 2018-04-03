@@ -77,16 +77,12 @@ function addTable() {
     var totalDisplays = [...document.querySelectorAll('.totalDisplay')];
     for (total = 0; total < totalDisplays.length; total++) {
         var totalDiv = document.createElement('DIV');
-        // totalDiv.setAttribute('class', 'unitDiv');
         totalDiv.setAttribute('class', 'totalDiv');
         totalDiv.style.fontWeight = 'bold';
         totalDiv.innerHTML = totalDisplays[total].innerHTML;
         unitColumn.appendChild(totalDiv);
     }
     
- 
-
-
     showTable();
 }
 

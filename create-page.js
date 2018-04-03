@@ -5,8 +5,8 @@ function addElements() {
     // cube titles
     var cubeNames = [
         'Desks',
-        'Executive Unit',
-        'Sec. Desks',
+        'L Shape',
+        'U Shape',
         'Hutch',
         'Credenza',
         'Sm. Bookcase',
@@ -15,30 +15,32 @@ function addElements() {
         'Drafting Table',
         'Map File',
         'Chairs',
-        'Sm Table',
-        'Work Table',
-        'Conf Table',
-        'Comp Table',
-        'Copier',
         'Sofa',
+        'Sm. Table',
+        'Lg. Table',
+        'Conf. Table',
+        'Comp. Table',
+        'Copier',
+        'Printers',
         '2/3 Vertical',
         '4/5 Vertical',
         '2/3 Lateral',
         '4/5 Lateral',
         'Storage Cabinet',
-        'Pictures',
+        'Pictures/WB',
         'Plants',
         'Marble/Glass Top',
         'PCs',
-        'Printers',
         'Equipment',
         'PBO Cartons',
         '3.0 Sec. Crates',
         '2.2 Cartons',
         'Gondolas',
-        'Appliances',
         'Rolling Carts',
         'Modular Stations',
+        'TV Box',
+        'Fridge',
+        'Microwave',
         'Misc.'
     ];
 
@@ -77,34 +79,13 @@ function addElements() {
         var p = document.createElement('P');
         p.setAttribute('class', 'total');
         p.innerHTML = '0';
-
-        // create minus input 
-        // var minusInput = document.createElement('INPUT');
-        // minusInput.setAttribute('type', 'button');
-        // minusInput.setAttribute('value', ' - ');
-        // minusInput.setAttribute('class', 'minus');
-        // minusInput.setAttribute('onclick', 'minus(this.parentNode.children[0])');
-
-        // create add input
-        // var addInput = document.createElement('INPUT');
-        // addInput.setAttribute('type', 'button');
-        // addInput.setAttribute('value', ' + ');
-        // addInput.setAttribute('class', 'plus');
-        // addInput.setAttribute('onclick', 'plus(this.parentNode)');
-
     
         newDiv.appendChild(plusDiv);
         plusDiv.appendChild(h3);
         plusDiv.appendChild(qtyDiv);
         qtyDiv.appendChild(p);
         newDiv.appendChild(hotCorner);
-        // plusDiv.appendChild(hotCorner);
-        // append minus button to qtyDiv
-        // qtyDiv.appendChild(minusInput);
-        // append plus button to qtyDiv
-        // qtyDiv.appendChild(addInput);
-
-        // append newDiv to containerDiv
+        
         containerDiv.appendChild(newDiv);
     }
 

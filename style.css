@@ -1,5 +1,6 @@
 html {
     background-color: white;
+    max-height: 100%;
 }
 
 .hidden {
@@ -29,7 +30,6 @@ html {
     height: 10%;
     width: 100%;
     font-size: large;
-    /*padding: 2%;*/
 }
 
 .count {
@@ -45,23 +45,9 @@ html {
     font-size: xx-large;
 }
 
-/*.quantity {
-    margin-top: 20%;
-    display: flex;
-    justify-content: space-around;
-}*/
-
 .plusDiv {
     min-height: 76.5%;
 }
-
-/*.minus {
-    border: 1px solid deeppink;
-    height: 20px;
-    width: 50%;
-    margin-top: 32%;
-    z-index: 99;
-}*/
 
 .hotCorner {
     /*border: 1px solid green;*/
